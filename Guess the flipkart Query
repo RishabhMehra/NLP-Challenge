@@ -39,7 +39,6 @@ text_clf=Pipeline([('vect',CountVectorizer()),
                    ('tfidf',TfidfTransformer()),
                    ('clf', LinearSVC())])
 text_clf.fit(x,y)
-
 test=[]
 for i in range(int(input())): 
     x=input()
