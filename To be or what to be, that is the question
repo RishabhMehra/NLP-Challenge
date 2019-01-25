@@ -42,6 +42,8 @@ counts = np.unique(targets, return_counts=True)
 le = LabelEncoder()
 y = le.fit_transform(targets)
 
+
+# train the model using Logistic Regression
 contexts_train, contexts_test, y_train, y_test = train_test_split(contexts, y, test_size=0.3)
 vectorizer = CountVectorizer()
 classifier = LogisticRegression()
